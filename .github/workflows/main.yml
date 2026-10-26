@@ -1,1 +1,19 @@
+name: pipeline 1
 
+on:
+  push:
+    branches:
+      -main
+
+job:
+  print message:
+    run on: ubuntu-latest
+
+    steps:
+      -name: print welcome message
+      run: echo'welcome to github'
+
+       -name: print hello message
+       run: echo'hello...'
+
+      
